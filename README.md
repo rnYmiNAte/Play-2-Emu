@@ -1,100 +1,56 @@
-# Play-2-Emu
-
-A lightweight PS2 emulator for Android & iOS
-
-by ampplay — package: com.ampplay.ps2
-
+# Play2 Emu
+A lightweight PlayStation 2 emulator for Android and iOS, developed by **ampplay**.
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
-  <img src="https://img.shields.io/badge/Build-GitHub%20Actions-success" />
-  <img src="https://img.shields.io/badge/Downloads-Incoming-orange" />
-</p><p align="center">
-  <img width="650" src="https://via.placeholder.com/650x350?text=Play2+Emu+Screenshot" />
-</p>
----
-
-📌 Overview
-
-Play2 Emu is a PlayStation®2 emulator designed for low-end to mid-range mobile devices.
-It supports .chd, .bin/.cue, and .iso game images with OpenGL and Vulkan rendering.
-
-Built for:
-
-Android 4.0–6.0 (minimum) up to latest
-
-iOS 5–9 (minimum) up to latest
-
-
-Designed to reach:
-
-29.97 fps (NTSC)
-
-25 fps (PAL / SECAM)
-
-
+## Key Features
+- Supports disc image formats: `.chd`, `.bin/.cue`, `.iso`
+- Rendering backends: OpenGL, Vulkan (Android) | OpenGL ES, Metal (iOS)
+- Fixed 4:3 aspect ratio output
+- Syncs to 29.97 fps (NTSC) / 25 fps (PAL/SECAM)
 
 ---
 
-✨ Features
+## System Requirements
 
-🎮 General Features
+### Android
+- **Minimum**: Android 4.0–6.0, Cortex A8-equivalent CPU, 1 GB RAM
+- **Recommended**: Android 6.0+, Snapdragon 625-equivalent CPU, 2 GB RAM
 
-Accurate PS2 boot via Start BIOS
-
-Compatible with .iso, .chd, .bin/.cue
-
-Dual rendering backends: OpenGL & Vulkan
-
-4:3 enforced aspect ratio for authenticity
-
-Save states, memory card support
-
-Touchscreen controller + full gesture mapping
-
-Controller profiles
-
-Screenshots & video capture
-
-Patch code system
-
-Disc changer & playlists
-
-
-🕹️ Touchscreen Controls
-
-Touch left side → L3
-
-Touch right side → R3
-
-Drag anywhere → Move Right Analog
-
-Move joystick icons → Move Left Analog
-
-
+### iOS
+- **Minimum**: iOS 5–9, Apple A4-equivalent CPU, 1 GB RAM
+- **Recommended**: iOS 9+, Apple A9-equivalent CPU, 2 GB RAM
 
 ---
 
-📱 System Requirements
+## Setup Guide
+1. **Install the App**
+   - Android: Download APK from [Releases](https://github.com/ampplay/Play2-Emu/releases) or Google Play (coming soon)
+   - iOS: Install via Xcode or TestFlight (coming soon)
+   
+2. **BIOS Setup**
+   - Place a valid PS2 BIOS file in your device’s storage (see [SetupGuide.md](./docs/en/SetupGuide.md) for paths)
+   - The emulator will auto-detect BIOS files on first launch
 
-Minimum
+3. **Load a Game**
+   - Use the built-in file picker to select your `.chd`, `.bin/.cue`, or `.iso` file
+   - Tap the game icon to start emulation
 
-Component	Requirement
+---
 
-OS	Android 4.0 → 6.0 / iOS 5 → 9
-CPU	Cortex-A8 / Apple A4 → Snapdragon 625 / Apple A9
-RAM	1 GB
-Aspect Ratio	4:3 fixed
+## Documentation
+- Full User Guide: [./docs/en/UserGuide.md](./docs/en/UserGuide.md)
+- Compatibility List: [./docs/en/CompatibilityList.md](./docs/en/CompatibilityList.md)
+- Contributing: [./docs/CONTRIBUTING.md](./docs/CONTRIBUTING.md)
 
+---
 
-Recommended
+## License
+This project is licensed under the **GNU General Public License v3.0** - see [LICENSE](./LICENSE) for details.
 
-Component	Requirement
+Third-party libraries are licensed under their respective terms (see [docs/en/TechnicalSpecs.md](./docs/en/TechnicalSpecs.md) for details).
 
-OS	Android 6+ / iOS 9+
-CPU	Snapdragon 625+ / Apple A9+
-RAM	2 GB
+---
 
+## Disclaimer
+Play2 Emu is not affiliated with Sony Interactive Entertainment. Users must own a physical copy of any game they emulate and comply with local copyright laws.
